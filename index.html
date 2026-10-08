@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - ปวรปรัชญ์ ศรีสว่างวงศ์</title>
+    <!-- เชื่อมต่อ External CSS เดียวกันทั้ง 2 หน้า HTML -->
+    <link rel="stylesheet" href="style.css">
+    <!-- เชื่อมต่อ External JavaScript -->
+    <script src="system.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container nav-container">
+            <h1 class="logo">Pawornprat's Portfolio</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">หน้าหลัก</a></li>
+                    <li><a href="project.html">ผลงานโปรเจกต์</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle" class="btn-theme">🌙 สลับธีม</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Profile Section -->
+        <section class="profile-card">
+            <img src="Photo.jpg" alt="รูปถ่ายปวรปรัชญ์" class="profile-img">
+            <div class="profile-info">
+                <span id="greeting" class="badge">ยินดีต้อนรับ</span>
+                <h2>ปวรปรัชญ์ ศรีสว่างวงศ์</h2>
+                <p class="subtitle">Pawornprat Srisawangwong</p>
+                <p class="quote">"Now that you tread on the right path, keep your momentum straight instead of swerving off." — My Father</p>
+            </div>
+        </section>
+
+        <!-- General Info & Education Section -->
+        <section class="section-block">
+            <h3>ข้อมูลทั่วไป & ประวัติการศึกษา</h3>
+            <table class="custom-table">
+                <thead>
+                    <tr>
+                        <th>ระดับการศึกษา</th>
+                        <th>สถานศึกษา / สถาบัน</th>
+                        <th>สาขา / แผนการเรียน</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>มัธยมศึกษาปีที่ 6</td>
+                        <td>โรงเรียนนวมินทราชินูทิศ หวน.</td>
+                        <td>ศิลป์-คำนวณ</td>
+                    </tr>
+                    <tr>
+                        <td>ปริญญาตรี (กำลังศึกษา)</td>
+                        <td>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี (KMUTT)</td>
+                        <td>เทคโนโลยีมีเดีย</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Hobbies, Skills, Interests -->
+        <div class="info-grid">
+            <div class="card">
+                <h3>🎨 งานอดิเรก</h3>
+                <ul>
+                    <li>วาดรูป (กระดาษ & ดิจิทัล)</li>
+                    <li>เขียนเนื้อเรื่อง / แต่งนวนิยาย</li>
+                    <li>ดู Video Essay</li>
+                    <li>ฟังเพลง & เล่นเกม</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>⚡ ทักษะ ความสามารถ</h3>
+                <ul>
+                    <li>การพูดและสื่อสารภาษาอังกฤษ</li>
+                    <li>ความคิดสร้างสรรค์ในการสร้างผลงาน</li>
+                    <li>UI Design เบื้องต้น</li>
+                    <li>การบริหารจัดการงานจำนวนมาก</li>
+                    <li>การคิดเชิงวิพากษ์ (Critical Thinking)</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>💡 ความสนใจ</h3>
+                <ul>
+                    <li>งานดิจิทัลอาร์ตและการวาดภาพ</li>
+                    <li>การแต่งนิยายและการสร้างโลกสมมุติ (World Building)</li>
+                    <li>การทำโมเดลสามมิติ (3D Modeling)</li>
+                    <li>การพัฒนาและเขียนโปรแกรม</li>
+                </ul>
+            </div>
+        </div>
+
+<!-- Class Assignments Section -->
+<section class="section-block highlight-box">
+    <h3>📚 in class assignments</h3>
+    <p>ลิงก์ไปหน้าเพจ Assignment ที่ทำ:</p>
+    
+    <!-- assignment listing with ul -->
+    <ul class="assignment-list">
+        <li><a href="assignments/assignment-3/Cinnamon_recipe.html" class="btn-link">Cinnamon Roll Wreath with Apples</a></li>
+        <li><a href="assignments/assignment-4/Pizza_dip_recipe.html" class="btn-link">Pizza dip</a></li>
+        <li><a href="assignments/assignment-5/blog.html" class="btn-link">Blog</a></li>
+        <li><a href="assignments/assignment-6/register.html" class="btn-link">Register and login</a></li>
+        <li><a href="assignments/assignment-7/squaregame.html" class="btn-link">Square game</a></li>
+    </ul>
+</section>
+
+        <!-- Contact & Social Links Section -->
+        <section class="section-block">
+            <h3>📬 Contacts & Socials</h3>
+            <p><strong>Email:</strong> <a href="mailto:pawornprat.sris@kmutt.ac.th">pawornprat.sris@kmutt.ac.th</a> | <a href="mailto:pawornprat1524@gmail.com">pawornprat1524@gmail.com</a></p>
+            <p><strong>Facebook:</strong> <a href="https://facebook.com" target="_blank" rel="noopener">Pawornprat Srisawangwong</a></p>
+            <p><strong>Instagram:</strong> <a href="https://instagram.com" target="_blank" rel="noopener">@pawornprat027</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>MDT312 Web Programming - Portfolio Project</p>
+    </footer>
+</body>
+</html>
