@@ -1,0 +1,144 @@
+/* General Layout Settings */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f6f0;
+    color: #333333;
+    /* Box Model: margin & padding */
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Header with text-align */
+.header {
+    background-color: #8b2626;
+    color: #ffffff;
+    /* Box Model */
+    padding: 30px 20px;
+    margin-bottom: 20px;
+    /* Text-align */
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+}
+
+.subtitle {
+    margin-top: 8px;
+    font-size: 1.1rem;
+    color: #f1c40f;
+}
+
+/* Container Box Model */
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Main Banner (Img & Width/Height) */
+.main-banner img {
+    /* Width & Height */
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    /* Box Model */
+    border: 3px solid #8b2626;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+/* Sections Box Model */
+.section {
+    background-color: #ffffff;
+    /* Box Model: border, padding, margin */
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 30px;
+}
+
+.section h2 {
+    color: #8b2626;
+    border-bottom: 2px solid #8b2626;
+    padding-bottom: 8px;
+    margin-top: 0;
+}
+
+/* FLEXBOX - Main Container Layout */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.flex-item {
+  flex: 1 1 300px;
+}
+
+/* Img Styling */
+.img-box img, .steps-img img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+/* Lists styling */
+ul, ol {
+    padding-left: 20px;
+    line-height: 1.8;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Gallery Flex-box Layout */
+.gallery {
+    /* Flex-box: Display: flex */
+    display: flex;
+    justify-content: space-between;
+}
+
+.gallery-card {
+    flex: 1;
+    min-width: 250px;
+    /* Box Model */
+    padding: 5px;
+}
+
+.gallery-card img {
+    /* Width & Height */
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    /* Box Model */
+    border: 2px solid #8b2626;
+    border-radius: 8px;
+}
+
+/* Footer with text-align */
+.footer {
+    background-color: #333;
+    color: #fff;
+    /* Text-align */
+    text-align: center;
+    /* Box Model */
+    padding: 15px 0;
+    margin-top: 20px;
+}
+
+.footer a {
+    color: #f1c40f;
+    text-decoration: none;
+}

@@ -1,0 +1,139 @@
+/* ==========================================
+   1. Dynamic / Desktop Layout
+   ========================================== */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin: 10px 0;
+    display: block;
+}
+
+.grid-container {
+    display: grid;
+    width: 100%; 
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        "header header header"
+        "ingredients instructions instructions"
+        "creamcheese instructions instructions"
+        "footer footer footer";
+    gap: 15px;
+}
+
+.grid-container > div {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    font-size: 16px;
+    color: #333333;
+}
+
+#header {
+    grid-area: header;
+    background-color: #ff6347; 
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+.hero-image {
+    max-width: 100%;
+    width: 450px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+#ingredients {
+    grid-area: ingredients;
+}
+
+.ingredients-image {
+    margin: 20px 0;
+}
+
+#instructions {
+    grid-area: instructions;
+    background-color: #fff8e7;
+}
+
+.step-image {
+    max-width: 100%;
+    width: 380px;
+    margin: 15px auto;
+}
+
+.result-image {
+    max-width: 100%;
+    width: 450px;
+    margin: 25px auto;
+}
+
+.topping-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.step-image-small {
+    width: 100%;
+    height: auto;
+}
+
+#creamcheese {
+    grid-area: creamcheese;
+}
+
+#footer {
+    grid-area: footer;
+    background-color: #333333;
+    color: white;
+    text-align: center;
+}
+
+#footer a {
+    color: #ffcc00;
+}
+
+/* ==========================================
+   2. Mobile Layout (แก้ไขเรื่องการทับซ้อน)
+   ========================================== */
+@media only screen and (max-width: 500px) {
+    body {
+        padding: 10px;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-areas: none;
+        grid-gap: 10px;
+    }
+
+    #header, 
+    #ingredients, 
+    #creamcheese, 
+    #instructions, 
+    #footer {
+        grid-area: auto;
+        grid-column: 1 / span 1;
+    }
+
+    .topping-images {
+        grid-template-columns: 1fr;
+    }
+}
